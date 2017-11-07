@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>FormTemplate</title>
+</head>
+<body>
+<form action="#" th:action="@{/processform}" method="post">
+    Birthday:<br>
+    <input type="text" name="formattedDate" placeholder="YYYY-MM-DD Please Enter your Birthday in Month/Day/Year"/>
+    </br>
+
+    <br>
+    <label for="male">Male</label>
+    <input type="radio" name="male" id="male" value="male"/>
+    </br>
+
+    <br>
+    <label for="female">Female</label>
+    <input type="radio" name="female" id="female" value="female"/>
+    </br>
+
+    <input type="submit" value="Submit"/>
+
+</form>
+</body>
+</html>
